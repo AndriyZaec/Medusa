@@ -73,6 +73,18 @@
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.StartWorkAtLbl = new System.Windows.Forms.Label();
             this.SaveBtn = new System.Windows.Forms.Button();
+            this.EmployeeProjectsDG = new System.Windows.Forms.DataGridView();
+            this.UploadBtn = new System.Windows.Forms.Button();
+            this.ProjectNameLbl = new System.Windows.Forms.Label();
+            this.tabPage12 = new System.Windows.Forms.TabPage();
+            this.StatusLbl = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.CurrentDepartmentCB = new System.Windows.Forms.ComboBox();
+            this.CurrentDepartmentDG = new System.Windows.Forms.DataGridView();
+            this.DestinationDepartmentDG = new System.Windows.Forms.DataGridView();
+            this.DestinationDepartmentCB = new System.Windows.Forms.ComboBox();
+            this.ChangeDepartmentBtn = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.Tabs.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -80,13 +92,20 @@
             this.tabPage3.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabControl3.SuspendLayout();
+            this.tabPage11.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EmployeeProjectsDG)).BeginInit();
+            this.tabPage12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CurrentDepartmentDG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DestinationDepartmentDG)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -192,6 +211,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.Controls.Add(this.tabPage12);
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -213,6 +233,11 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.textBox1);
+            this.tabPage5.Controls.Add(this.StatusLbl);
+            this.tabPage5.Controls.Add(this.ProjectNameLbl);
+            this.tabPage5.Controls.Add(this.UploadBtn);
+            this.tabPage5.Controls.Add(this.EmployeeProjectsDG);
             this.tabPage5.Location = new System.Drawing.Point(8, 39);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
@@ -294,6 +319,11 @@
             // 
             // tabPage11
             // 
+            this.tabPage11.Controls.Add(this.ChangeDepartmentBtn);
+            this.tabPage11.Controls.Add(this.DestinationDepartmentDG);
+            this.tabPage11.Controls.Add(this.DestinationDepartmentCB);
+            this.tabPage11.Controls.Add(this.CurrentDepartmentDG);
+            this.tabPage11.Controls.Add(this.CurrentDepartmentCB);
             this.tabPage11.Location = new System.Drawing.Point(8, 39);
             this.tabPage11.Name = "tabPage11";
             this.tabPage11.Size = new System.Drawing.Size(1270, 723);
@@ -520,6 +550,121 @@
             this.SaveBtn.UseVisualStyleBackColor = true;
             this.SaveBtn.Visible = false;
             // 
+            // EmployeeProjectsDG
+            // 
+            this.EmployeeProjectsDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.EmployeeProjectsDG.Location = new System.Drawing.Point(7, 7);
+            this.EmployeeProjectsDG.Name = "EmployeeProjectsDG";
+            this.EmployeeProjectsDG.RowTemplate.Height = 33;
+            this.EmployeeProjectsDG.Size = new System.Drawing.Size(795, 580);
+            this.EmployeeProjectsDG.TabIndex = 0;
+            // 
+            // UploadBtn
+            // 
+            this.UploadBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("UploadBtn.BackgroundImage")));
+            this.UploadBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.UploadBtn.FlatAppearance.BorderSize = 0;
+            this.UploadBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UploadBtn.Location = new System.Drawing.Point(808, 593);
+            this.UploadBtn.Name = "UploadBtn";
+            this.UploadBtn.Size = new System.Drawing.Size(462, 136);
+            this.UploadBtn.TabIndex = 1;
+            this.UploadBtn.UseVisualStyleBackColor = true;
+            // 
+            // ProjectNameLbl
+            // 
+            this.ProjectNameLbl.AutoSize = true;
+            this.ProjectNameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ProjectNameLbl.Location = new System.Drawing.Point(956, 20);
+            this.ProjectNameLbl.Name = "ProjectNameLbl";
+            this.ProjectNameLbl.Size = new System.Drawing.Size(182, 31);
+            this.ProjectNameLbl.TabIndex = 2;
+            this.ProjectNameLbl.Text = "ProjectName";
+            // 
+            // tabPage12
+            // 
+            this.tabPage12.Controls.Add(this.dataGridView1);
+            this.tabPage12.Location = new System.Drawing.Point(8, 39);
+            this.tabPage12.Name = "tabPage12";
+            this.tabPage12.Size = new System.Drawing.Size(1276, 735);
+            this.tabPage12.TabIndex = 2;
+            this.tabPage12.Text = "Звіти";
+            this.tabPage12.UseVisualStyleBackColor = true;
+            // 
+            // StatusLbl
+            // 
+            this.StatusLbl.AutoSize = true;
+            this.StatusLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.StatusLbl.Location = new System.Drawing.Point(995, 82);
+            this.StatusLbl.Name = "StatusLbl";
+            this.StatusLbl.Size = new System.Drawing.Size(92, 31);
+            this.StatusLbl.TabIndex = 3;
+            this.StatusLbl.Text = "Status";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(808, 165);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(462, 422);
+            this.textBox1.TabIndex = 4;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 4);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 33;
+            this.dataGridView1.Size = new System.Drawing.Size(1273, 728);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // CurrentDepartmentCB
+            // 
+            this.CurrentDepartmentCB.FormattingEnabled = true;
+            this.CurrentDepartmentCB.Location = new System.Drawing.Point(17, 16);
+            this.CurrentDepartmentCB.Name = "CurrentDepartmentCB";
+            this.CurrentDepartmentCB.Size = new System.Drawing.Size(533, 33);
+            this.CurrentDepartmentCB.TabIndex = 0;
+            // 
+            // CurrentDepartmentDG
+            // 
+            this.CurrentDepartmentDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.CurrentDepartmentDG.Location = new System.Drawing.Point(17, 56);
+            this.CurrentDepartmentDG.Name = "CurrentDepartmentDG";
+            this.CurrentDepartmentDG.RowTemplate.Height = 33;
+            this.CurrentDepartmentDG.Size = new System.Drawing.Size(533, 651);
+            this.CurrentDepartmentDG.TabIndex = 1;
+            // 
+            // DestinationDepartmentDG
+            // 
+            this.DestinationDepartmentDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DestinationDepartmentDG.Location = new System.Drawing.Point(722, 56);
+            this.DestinationDepartmentDG.Name = "DestinationDepartmentDG";
+            this.DestinationDepartmentDG.RowTemplate.Height = 33;
+            this.DestinationDepartmentDG.Size = new System.Drawing.Size(533, 651);
+            this.DestinationDepartmentDG.TabIndex = 3;
+            this.DestinationDepartmentDG.Visible = false;
+            // 
+            // DestinationDepartmentCB
+            // 
+            this.DestinationDepartmentCB.FormattingEnabled = true;
+            this.DestinationDepartmentCB.Location = new System.Drawing.Point(722, 16);
+            this.DestinationDepartmentCB.Name = "DestinationDepartmentCB";
+            this.DestinationDepartmentCB.Size = new System.Drawing.Size(533, 33);
+            this.DestinationDepartmentCB.TabIndex = 2;
+            // 
+            // ChangeDepartmentBtn
+            // 
+            this.ChangeDepartmentBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ChangeDepartmentBtn.BackgroundImage")));
+            this.ChangeDepartmentBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ChangeDepartmentBtn.FlatAppearance.BorderSize = 0;
+            this.ChangeDepartmentBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ChangeDepartmentBtn.Location = new System.Drawing.Point(557, 266);
+            this.ChangeDepartmentBtn.Name = "ChangeDepartmentBtn";
+            this.ChangeDepartmentBtn.Size = new System.Drawing.Size(159, 168);
+            this.ChangeDepartmentBtn.TabIndex = 4;
+            this.ChangeDepartmentBtn.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -538,8 +683,11 @@
             this.tabPage3.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             this.tabControl2.ResumeLayout(false);
             this.tabControl3.ResumeLayout(false);
+            this.tabPage11.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -549,6 +697,11 @@
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EmployeeProjectsDG)).EndInit();
+            this.tabPage12.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CurrentDepartmentDG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DestinationDepartmentDG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -600,5 +753,17 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label PositionLbl;
         private System.Windows.Forms.Button SaveBtn;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label StatusLbl;
+        private System.Windows.Forms.Label ProjectNameLbl;
+        private System.Windows.Forms.Button UploadBtn;
+        private System.Windows.Forms.DataGridView EmployeeProjectsDG;
+        private System.Windows.Forms.TabPage tabPage12;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button ChangeDepartmentBtn;
+        private System.Windows.Forms.DataGridView DestinationDepartmentDG;
+        private System.Windows.Forms.ComboBox DestinationDepartmentCB;
+        private System.Windows.Forms.DataGridView CurrentDepartmentDG;
+        private System.Windows.Forms.ComboBox CurrentDepartmentCB;
     }
 }
