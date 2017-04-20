@@ -66,6 +66,7 @@
             this.LoginBtn.TabIndex = 2;
             this.LoginBtn.Text = "Login";
             this.LoginBtn.UseVisualStyleBackColor = false;
+            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // LoginForm
             // 

@@ -1,9 +1,14 @@
 \\mac\home\documents\visual studio 2015\Projects\Medusa\Medusa\bin\Debug\Medusa.exe.config
 \\mac\home\documents\visual studio 2015\Projects\Medusa\Medusa\bin\Debug\Medusa.exe
 \\mac\home\documents\visual studio 2015\Projects\Medusa\Medusa\bin\Debug\Medusa.pdb
-\\mac\home\documents\visual studio 2015\Projects\Medusa\Medusa\obj\Debug\Medusa.csprojResolveAssemblyReference.cache
 \\mac\home\documents\visual studio 2015\Projects\Medusa\Medusa\obj\Debug\Medusa.LoginForm.resources
 \\mac\home\documents\visual studio 2015\Projects\Medusa\Medusa\obj\Debug\Medusa.Properties.Resources.resources
 \\mac\home\documents\visual studio 2015\Projects\Medusa\Medusa\obj\Debug\Medusa.csproj.GenerateResource.Cache
 \\mac\home\documents\visual studio 2015\Projects\Medusa\Medusa\obj\Debug\Medusa.exe
 \\mac\home\documents\visual studio 2015\Projects\Medusa\Medusa\obj\Debug\Medusa.pdb
+\\mac\home\documents\visual studio 2015\Projects\Medusa\Medusa\bin\Debug\EntityFramework.dll
+\\mac\home\documents\visual studio 2015\Projects\Medusa\Medusa\bin\Debug\EntityFramework.SqlServer.dll
+\\mac\home\documents\visual studio 2015\Projects\Medusa\Medusa\bin\Debug\EntityFramework.xml
+\\mac\home\documents\visual studio 2015\Projects\Medusa\Medusa\bin\Debug\EntityFramework.SqlServer.xml
+\\mac\home\documents\visual studio 2015\Projects\Medusa\Medusa\obj\Debug\Medusa.Forms.MainForm.resources
+\\mac\home\documents\visual studio 2015\Projects\Medusa\Medusa\obj\Debug\Medusa.csprojResolveAssemblyReference.cache
